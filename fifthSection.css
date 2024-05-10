@@ -1,0 +1,96 @@
+.fifth{
+    width: 100vw;
+    height: 700px;
+    background-color: white;
+}
+.fifth__inner{
+    width: 100%;
+    height: 100%;
+    max-width: 1470px;
+    background-color: white;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.fifth__inner > h1{
+    align-self: flex-start;
+    font-size: 30px;
+    font-weight: bold;
+}
+.fifth__inner__container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.fifth__inner__container__card{
+    width: 480px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+}
+.fifth__inner__container__card>img{
+    width: 100%;
+    height: 100%;
+}
+
+.fifth__inner__container__card--overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.7);  */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* 아래에서 위로 그라데이션 */
+    display: flex;
+    align-items: end;
+
+    
+}
+.fifth__inner__container__card--overlay:hover{
+background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0)); 
+}
+.fifth__inner__container__card--overlay__textBox{
+    width: 100%;
+    /* background-color: blue; */
+    font-size: 20px;
+    color: white;
+    padding: 2rem;
+}
+
+@media screen and (max-width:500px) {
+    .fifth {
+        width: 100vw;
+        height: 200vh; /* 화면 크기 제한 */
+        /* background-color: aqua; */
+        
+    }
+    .fifth__inner{
+        max-width: 98%;
+        background-color: white;
+        gap: 80px;
+    }
+    .fifth__inner > h1{
+        align-self: auto;
+    }
+    .fifth__inner__container{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fifth__inner__container__card{
+        width: 384px;
+        height: 480px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        position: relative;
+    }
+}

@@ -1,0 +1,118 @@
+footer{
+    width: 100vw;
+    height: 520px;
+    background-color: #333;
+    
+}
+.footer__inner{
+    width: 100%;
+    height: 100%;
+    max-width: 1470px;
+    background-color: #333;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    gap: 20px;
+}
+.footer__inner__itemBox{
+    height: 400px;
+    width: 100%;
+
+    background-color: #333;
+    margin-top: 20px;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.footer__inner__item{
+    padding-top: 30px;
+    background-color: 333;
+
+    
+}
+.footer__inner__item > h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+.footer__inner__item > ul > li{ 
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer__inner__menuBox{
+    width: 100%;
+    height: 35px;
+    background-color: 333;
+    text-align: center;
+}
+.footer__inner__menuBox > span{
+    padding-right: 5px;
+    border-right: 1px solid #000;
+    color: white;
+}
+
+.footer__inner__menuBox > a{
+    
+    color: white;
+}
+
+.footer__inner__item__iconBox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+}
+.footer__inner__item__iconBox__icon{
+    width: 60px;
+    height: 40px;
+    
+}
+.footer__inner__item__iconBox__icon>img{
+    width: 100%;
+    height: 100%;
+}
+.footer__inner__item__iconBox>i{
+    font-size: 40px;
+    color: white;
+}
+
+@media screen and (max-width:500px) {
+    footer{
+        height: 800px;
+    }
+    .footer__inner{
+        width: 90%;
+    }
+    .footer__inner__itemBox{
+        height: 400px;
+        width: 100%;
+    
+        background-color: #333;
+        margin-top: 20px;
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .footer__inner__item__iconBox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .A{
+        display: flex;
+    }
+    
+    
+    .footer__inner__menuBox{
+        display: none;
+    }
+}
